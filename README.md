@@ -2,10 +2,6 @@
 
 # 8-Player Tournament Tic-Tac-Toe
 
-## [Video](https://drive.google.com/drive/folders/1I9-iHmU-HjgLX_5UfRc2BKjRhqcureSE?usp=sharing)
-
-### OH!... —WHEN?
-
 Owen Shi & Louis Oh-Aronson
 
 ### Project Description:
