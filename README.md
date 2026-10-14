@@ -6,11 +6,11 @@ Owen Shi & Louis Oh-Aronson
 
 This is a Tic Tac Toe tournament with 8 players. The players will be separated 3 different rounds of brackets (qualifiers, semifinals, and finals) and compete in a very intense game of Tic-Tac-Toe to determine a grand winner. The prize is bragging rights!
 
-At it's core, a forking server and shared memory addresses are used as a proxy to facilitate client-client communication. We have a game state struct that is constantly being sent back and forth, and manipulated when each bracket ends to determine the next set of matchups.
+At its core, a forking server and shared memory addresses are used as a proxy to facilitate client-client communication. We have a game state struct that is constantly being sent back and forth, and manipulated when each bracket ends to determine the next set of matchups.
 
 ### Instructions:
 
-#### Server Setup & Comnmands:
+#### Server Setup & Commands:
 
 Generally, to start the server, simply run a `make server-run` and the server
 will automatically compile and run. It will listen for clients until 8 are
@@ -42,10 +42,9 @@ https://beej.us/guide/bgnet/html/
 
 https://konstantinnovation.github.io/systems.html
 
-### Bugs:
-
-Occasionally (usually), the server requires two startups (cntrl+c then run
-again, cntrl+c then run again) before it starts recieving connections
+### Known Issues:
+Occasionally, the server requires two startups (cntrl+c then run
+again, cntrl+c then run again) before it starts receiving connections
 from the client. We're not quite sure why this happens, or why restarting it
 fixes it, but suspect that it's an issue with persistent shared memory
 addresses or semaphores.
